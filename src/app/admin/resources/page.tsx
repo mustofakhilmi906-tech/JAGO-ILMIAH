@@ -4,7 +4,6 @@ import { prisma } from '@/lib/prisma';
 import { redirect } from 'next/navigation';
 import { TYPE_LABELS, formatDate } from '@/lib/utils';
 import AdminResourceForm from './AdminResourceForm';
-import DeleteResourceButton from './DeleteResourceButton';
 
 export default async function AdminResourcesPage() {
   const session = await getServerSession(authOptions);
@@ -67,7 +66,7 @@ export default async function AdminResourcesPage() {
                     <td className="px-4 py-3">
                       <div className="flex items-center gap-2">
                         <AdminResourceForm resource={r} />
-                        <DeleteResourceButton id={r.id} title={r.title} />
+
                       </div>
                     </td>
                   </tr>
