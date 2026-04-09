@@ -66,7 +66,6 @@ export default async function AdminResourcesPage() {
                     <td className="px-4 py-3">
                       <div className="flex items-center gap-2">
                         <AdminResourceForm resource={r} />
-
                       </div>
                     </td>
                   </tr>
@@ -79,3 +78,7 @@ export default async function AdminResourcesPage() {
     </div>
   );
 }
+
+
+
+
